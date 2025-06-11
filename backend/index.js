@@ -23,6 +23,10 @@ app.get('/home', (req, res) => {
   res.send('Home route response from backend');
 });
 
+app.get('/about',(req,res) => {
+    res.send("Hello from about backend")
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
